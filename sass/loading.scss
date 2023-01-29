@@ -1,0 +1,61 @@
+.pokeball {
+  height: 125px;
+  width: 125px;
+  border: 0.5rem solid #383b4f;
+  border-radius: 50%;
+  background-image: linear-gradient(#f51939 55px, white 62px);
+  position: relative;
+  animation: spin 3s ease-in-out infinite;
+  margin: 0 auto;
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  50% {
+    transform: rotateZ(360deg);
+  }
+
+  100% {
+    transform: rotateZ(0deg);
+  }
+}
+
+.pokeball:before {
+  position: absolute;
+  content: '';
+  height: 10px;
+  width: 115px;
+  background-color: #383b4f;
+  top: 50px;
+}
+
+.pokeball:after {
+  position: absolute;
+  content: '';
+  height: 40px;
+  width: 40px;
+  background-image: radial-gradient(
+    #ffffff 0px,
+    #ffffff 5px,
+    #383b4f 5px,
+    #383b4f 7.5px,
+    #ffffff 7.5px,
+    #ffffff 16px,
+    #383b4f 16px
+  );
+  border-radius: 50%;
+  top: 35px;
+  left: 35px;
+}
+
+/* const loadAnimation = () => {
+  document.querySelector('.pokeball').style.display = 'block';
+  document.querySelector('.content__wrapper').style.display = 'none';
+};
+
+const onLoad = setInterval(loadAnimation, 1000);
+const stop = clearInterval(onLoad); */

@@ -1,0 +1,11 @@
+@media (min-width: 360px) and (max-width: 601px) {
+  .intro h1,
+  p {
+    padding: 0 2rem;
+  }
+
+  .intro p {
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+  }
+}
