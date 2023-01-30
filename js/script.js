@@ -19,8 +19,6 @@ const searchBtn = document
 
 const searchInput = document.querySelector('#search__input');
 
-const lowerName = searchInput.value.toLowerCase();
-
 //! Fetch
 //Obtain data from the api
 const fetchPokemon = async (pokemon) => {
