@@ -39,7 +39,7 @@
 
       #search__input {
         height: 2rem;
-        width: 18rem;
+        width: 80%;
         border-radius: 8px;
         margin-right: 8px;
         border-style: none;
@@ -163,8 +163,8 @@
   }
 
   & .pokemon__sprite {
-    padding: 0 2.4rem;
-    max-width: 420px;
+    padding: 0 1rem;
+    //max-width: 420px;
     max-height: 450px;
   }
 }

@@ -1,4 +1,4 @@
-@media (min-width: 360px) and (max-width: 601px) {
+@media (min-width: 360px) and (max-width: 800px) {
   .intro h1,
   p {
     padding: 0 2rem;
@@ -7,5 +7,61 @@
   .intro p {
     line-height: 1.4;
     letter-spacing: 0.5px;
+  }
+
+  //Navbar
+
+  .navbar {
+    width: 100%;
+  }
+
+  .search__input {
+    margin-right: 0.2rem;
+    width: 80%;
+    padding-left: 0.2rem;
+    margin-right: 0;
+  }
+
+  //Card
+  .content__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    height: 100%;
+    position: relative;
+  }
+
+  .left__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+
+    & .stats__wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      & .stats {
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+      }
+    }
+  }
+
+  .left__content * {
+    padding: 0.5rem;
+    margin-top: 0;
+  }
+
+  .right__content {
+    padding: 0;
+
+    & pokemon__sprite {
+      width: 100%;
+    }
   }
 }
